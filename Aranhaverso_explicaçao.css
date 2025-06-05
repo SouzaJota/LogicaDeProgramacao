@@ -1,0 +1,101 @@
+body {
+    margin: 0; /* Remove as margens padrão da página */
+    padding: 0; /* Remove os preenchimentos (padding) padrão da página */
+    font-family: 'Russo One', sans-serif; /* Define a fonte principal da página */
+    background: url('https://a-static.besthdwallpaper.com/spider-symbol-of-spider-man-wallpaper-2800x2100-95891_28.jpg') no-repeat center center fixed;
+    /* Define uma imagem de fundo centralizada, sem repetição e fixa ao rolar a página */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+    color: #ccc; /* Define a cor padrão do texto como cinza claro */
+}
+
+header {
+    background-color: #3d3d3d; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    padding: 40px 20px; /* Espaçamento interno no topo/baixo (40px) e laterais (20px) */
+    font-size: 3em; /* Tamanho da fonte grande (3 vezes o tamanho padrão) */
+    font-family: 'Rock Salt', cursive; /* Fonte decorativa usada no cabeçalho */
+    text-shadow: 4px 4px 4px #000; /* Sombra no texto para dar profundidade */
+    border-bottom: 5px solid #666; /* Linha inferior do cabeçalho */
+}
+
+nav {
+    text-align: center; /* Centraliza o conteúdo da navegação */
+    background-color: #222; /* Cor de fundo escura para a barra de navegação */
+    padding: 10px; /* Espaçamento interno */
+}
+
+nav button {
+    margin: 5px; /* Espaço entre os botões */
+    padding: 10px 20px; /* Espaço interno dos botões (vertical 10px, horizontal 20px) */
+    background-color: #ff1744; /* Cor de fundo vermelha vibrante */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1em; /* Tamanho da fonte padrão */
+    cursor: pointer; /* Mostra o cursor de clique */
+}
+
+nav button:hover {
+    background-color: #ff0000; /* Altera a cor de fundo ao passar o mouse */
+    color: black; /* Altera a cor do texto ao passar o mouse */
+}
+
+.container {
+    max-width: 900px; /* Largura máxima do container */
+    margin: 50px auto; /* Centraliza o container com margem acima/abaixo de 50px */
+    padding: 30px; /* Espaçamento interno de 30px */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 0 20px #ff1744; /* Sombra em volta do container com brilho vermelho */
+    display: none; /* Esconde o container por padrão */
+}
+
+.container.active {
+    display: block; /* Exibe o container quando a classe "active" está presente */
+}
+
+.section {
+    margin-bottom: 50px; /* Espaço inferior entre seções */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.section a {
+    color: #ff1744; /* Cor dos links */
+    font-size: 2.2em; /* Tamanho da fonte grande */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-shadow: 2px 2px 5px #000; /* Sombra para destacar o texto */
+    transition: color 0.3s; /* Transição suave na mudança de cor */
+}
+
+.section a:hover {
+    color: #ffea00; /* Cor dos links ao passar o mouse */
+}
+
+.section p {
+    font-size: 1.1em; /* Tamanho de fonte um pouco maior que o padrão */
+    margin: 15px 0; /* Espaçamento acima e abaixo do parágrafo */
+    color: #ccc; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    text-shadow: 1px 1px 2px #000; /* Sombra leve no texto */
+}
+
+.section img {
+    width: 100%; /* Imagem ocupa toda a largura disponível */
+    max-width: 350px; /* Mas não ultrapassa 350px de largura */
+    height: auto; /* Altura ajusta proporcionalmente à largura */
+    border: 5px solid #ff1744; /* Borda vermelha ao redor da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 15px #fff; /* Sombra clara ao redor da imagem */
+    transition: transform 0.3s ease-in-out; /* Transição suave ao aplicar transformações */
+}
+
+.section img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #ff1744; /* Cor vermelha vibrante para o texto */
+}
