@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classificaçao</title>
+  </head>
+  <body>
+    <script>
+      var sexo = prompt("Qual seu genero:");
+      var peso = prompt("Qual seu peso:");
+      var altura = prompt("Quale sua altura:");
+
+      
+      var imc = peso / (altura * altura);
+      var classificaçao = "";
+
+      if (imc < 18.5) {
+        classificaçao = "Abaixo do peso";
+      } else if (imc < 25) {
+        classificaçao = "Peso normal";
+      } else if (imc < 30) {
+        classificaçao = "Sobrepeso";
+      } else if (imc < 35) {
+        classificaçao = "Obesidade grau I";
+      } else if (imc < 40) {
+        classificaçao = "Obesidade grau II";
+      } else {
+        classificaçao = "Obesidade grau III";
+      }
+
+      alert (classificaçao)
+    </script>
+  </body>
+</html>
