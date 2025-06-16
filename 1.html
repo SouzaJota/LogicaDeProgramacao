@@ -7,11 +7,36 @@
 </head>
 <body>
     <script>
-        do{
-        var num = Number(prompt("Digite o Numero: "))
-        var x = num*3 
-        confirmar=confirm("o resultado e: "+x+"\nQuer Caucular de novo??")}
-        while (confirmar)
+        var idadehm1 = Number(prompt("digite a idade do homem 1: "))
+        var idadehm2 = Number(prompt("digite a idade do homem 2: "))
+        var idademl1 = Number(prompt("digite a idade da mulher 1: "))
+        var idademl2 = Number(prompt("digite a idade da mulher 2: "))
+        var homemvelho
+        var homemnovo
+        var mulhervelha
+        var mulhernova
+        var soma1
+        var soma2
+        if (idadehm1 > idadehm2){
+        homemvelho=idadehm1
+        homemnovo=idadehm2
+        }
+        else{
+            homemvelho = idadehm2
+            homemnovo = idadehm1
+        }
+        if (idademl1 > idadehm2){
+         mulhervelha = idademl1
+         mulhernova= idademl2
+        }
+        else{
+            mulhervelha = idademl2
+            mulhernova = idademl1
+        }
+        soma1=(homemvelho + mulhernova)
+        soma2=(homemnovo + mulhervelha)
+        alert("idade do homem mais velho com a mulher mais nova: " +soma1)
+        alert("idade do homem mais novo com a mulher mais velha: " +soma2)
     </script>
 </body>
-</html>   
+</html>
