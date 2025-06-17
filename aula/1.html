@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="1.js"></script>
+    <link rel="stylesheet" href="UniQuiz.css ">
+    
 </head>
-<body>  
-    <button onclick="fatiar()">Fatiar Array</button>
-    <button onclick="listarArray()">Listar Array</button>    
-    <button onclick="remover()">remover</button>    
-    <button onclick="tamanhoArray()">Tamanho</button>    
-    <button onclick="adicionarFinalSemPush()">Adicionar Final</button>    
-    <button onclick="adicionarFinal()">adicionarFinal</button>
-    <button onclick="buscarPorPosicao()">buscarPorPosicaos</button>
-    <br>
-    <br>  
-    <div id="listarFrutas"></div>
+<body>
+    
+    <div id="diviniciar">
+        <button id="botaoiniciar" class="main-btn" onclick="iniciarjogo()">Iniciar</button>
+    </div>
+
+    <div id="areajogo" class="tela-container">
+        <div id="areaperguntas" class="opcoesRespostas"></div>
+        <button class="botaoProximo" onclick="proximapergunta()">Proxima pergunta</button>
+    </div>
+
+   <script src="1.js"></script>
 </body>
 </html>

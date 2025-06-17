@@ -1,54 +1,34 @@
-const frutas =["melancia", "uva", "morango", "banana", "maçã", "abacaxi", "pera", "manga", "melão", "laranja"];
-let novaFrutas;
+const botaoiniciar = document.getElementById("diviniciar")
+const divareajogo = document.getElementById("areajogo")
 
-console.log(frutas);
 
-function buscarPorPosicao() {
-    let posicao = prompt("Escolha o índice do array (0 a " + (frutas.length - 1) + "):");
-    alert(frutas[posicao]);
+const perguntas =[
+    "Qual é o maior deserto do mundo?",
+     "Qual é a capital do Brasil?",
+     "Qual é a capital da Austrália?",
+     "Qual é o país com maior população no mundo?",
+     " Qual a linha imaginária que atravessa o Brasil?",
+     "Qual o oceano que banha o Brasil?",
+    ]
+    let indiceperguntas = 0
+function iniciarjogo(){
+    fecharbotaoinicio()
+    abrirareajogo()
 }
-
-function tamanhoArray() {
-    alert(frutas.length);
-}
-
-function adicionarFinal() {
-    novaFrutas = prompt("Digite uma fruta:");
-    frutas.push(novaFrutas);
-    console.log(frutas);
-}
-
-function adicionarComeco() {
-    novaFrutas = prompt("Digite uma fruta:");
-    frutas.unshift(novaFrutas);
-    console.log(frutas);
-}
-
-function adicionarFinalSemPush() {
-    novaFrutas = prompt("Digite uma fruta:");
-    frutas[frutas.length] = novaFrutas;
-    console.log(frutas);
-}
-
-function listarArray() {
-    let elementohtml = document.getElementById("listarFrutas");
-    let estruturaHTML = "";
-    for (novaFrutas of frutas) {
-        estruturaHTML += '<p>' + novaFrutas + '</p><br>';
-    }
-    elementohtml.innerHTML = estruturaHTML;
-}
-function remover(){
-frutas.pop()
-listarArray()
-if (frutas.length==0){
-alert("Nao a como remover mais!")
-}
-
-}
-function fatiar(){
-
+function fecharbotaoinicio(){
     
-    const fruta = frutas.slice(prompt("digite uma posiçao"))
+    botaoiniciar.innerHTML=""
+    
+}
+function abrirareajogo (){
+    divareajogo.classList.add("active")
 
+   let botaodepergunta = document.createElement("button")
+   botaodepergunta.textContent = perguntas [indiceperguntas] 
+   botaodepergunta.classList.add("answer-btn")
+   areaperguntas.appendChild(botaodepergunta)
+}
+function proximapergunta(){
+    indiceperguntas++
+    abrirareajogo()
 }
