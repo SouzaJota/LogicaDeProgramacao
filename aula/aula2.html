@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="aula2.css">
 </head>
 <body>
-    <script>
-        var num = Number(prompt("Digite um numero"))
-        if (num % 2 ==0){
-            alert("par")
-        }
-        else if (num %2 != 0){
-            alert("impar")
-        }
-        
-        if (num <0){
-            alert("Negativo")
-        }
-        else if(num ==0){
-            alert("Neutro")
-        }
-        else {alert("Positivo")}
-       
-         
-    </script>
-     
+<div id="aula2" onclick="clicar()"onmouseenter="entrar()"onmouseout="saida()">Botao</div>
+<script>
+    function clicar(){
+    aula2.style.background='red'
+    aula2.innerText='Clicou'
+    aula2.style.color='white'
+    }
+    function entrar(){
+        aula2.style.background = 'pink'
+        aula2.innerText= 'Entrou'
+        aula2.style.color='black'
+    }
+    function saida(){
+        aula2.style.background='gray'
+        aula2.innerText='botao'
+        aula2.style.color='black'
+    }
+</script>
 </body>
 </html>

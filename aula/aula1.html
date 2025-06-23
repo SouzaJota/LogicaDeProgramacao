@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+</head>
+<body>
+ <script>
+var idade, altura, peso
+idade = Number(prompt("Informe sua idade"))
+altura = Number(prompt("Informe sua altura (em cm)"))
+peso = Number(prompt("Informe seu peso (em kg)"))
+
+if(idade > 12 && altura >= 150 && peso >= 50 && peso <= 120){
+    alert("Você está liberado! Divirta-se!")
+}
+else if(idade <= 12 && altura < 150 && peso >= 50 && peso <= 120){
+    alert("Você não pode brincar! Pois você não tem a idade e altura miníma :(")
+}
+else if(idade <= 12 && peso < 50 && peso > 120 && altura >= 150){
+    alert("Você não pode brincar! Pois você não tem o peso e a idade adequada :(")
+}
+else if(altura < 150 && peso < 50 && peso > 120 && idade > 12){
+    alert("Você não pode brincar! Pois não tem a altura e o peso adequado :(")
+}
+else if(idade <= 12 && altura >= 150 && peso >= 50 && peso <= 120){
+    alert("Você não pode brincar! Pois não tem a idade miníma :(")
+}
+else if(peso < 50 && peso > 120 && idade > 12 && altura >= 150){
+    alert("Você não pode brincar! Pois não tem o peso adequado :(")
+}
+else if(altura < 150 && peso >= 50 && peso <= 120 && idade > 12){
+    alert("Você não pode brincar! Pois não tem a altura miníma :(")
+}
+else{
+    alert("Você não pode brincar! Pois não tem a altura,peso e idade adequada :(")
+}
+
+ </script>   
+</body>
+</html>

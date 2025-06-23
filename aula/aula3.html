@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Soma de Dois Valores</title>
+  <style>
+    body {
+
+      text-align: center;
+      background-color: #f0f0f0;
+      margin-top: 350px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    .container {
+      background-color: #444;
+      color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      display: inline-block;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+      width: 80px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .resultado {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
 </head>
 <body>
-    <script>
-        var idade = Number(prompt('idade do nadador'))
 
-        if(idade >= 5 && idade <= 7){
-            alert('infantil A')
-        }
-        else if(idade >= 8 && idade <= 10){
-            alert('infantil B')
-        }
-        else if(idade >= 11 && idade <= 13){
-            alert('juvenil A')
-        }
-        else if(idade >= 14 && idade <= 17){
-            alert('juvenil B')
-        }
-        else if(idade >= 18){
-            alert('adultos')
-        }
-        else {
-            alert ("infelizmente ele n pode nadar nesse campeonato ")
-        }
+  <h1>Soma de Dois Números</h1>
+  <div class="container">
+    <h2>Fala 2 numeros</h2><br>
+    <input type="number" id="valor1">
+    <input type="number" id="valor2"><br>
+    <button onclick="calculo()">Resultado</button>
 
-    </script>
-    
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script>
+    function calculo() {
+      const valor1 = Number(document.getElementById("valor1").value);
+      const valor2 = Number(document.getElementById("valor2").value);
+
+      const soma = valor1 + valor2;
+      document.getElementById("resultado").textContent = `Resultado da soma: ${valor1} + ${valor2} = ${soma}`;
+    }
+    if(valor1=NaN){
+      alert("coloca o numero ae pae")
+    }
+  </script>
+
 </body>
 </html>
